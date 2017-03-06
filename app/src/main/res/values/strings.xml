@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">M6_SRB_EJER_Futbol</string>
+    <string name="titulo_principal">Equipo de futbol</string>
+    <string name="titulo_equipo" >Configurar Equipo</string>
+    <string name="titulo_jugador" >Configurar Jugador</string>
+    <string name="nombre_equipo">Nombre del equipo</string>
+    <string name="director_tecnico">Director tecnico</string>
+    <string name="config_team">Configurar Equipo</string>
+    <string name="add_player">Agregar Jugador</string>
+    <string name="nombre_jugador">Nombre del Jugador</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="posicion">Posicion</string>
+    <string name="liga">Liga</string>
+    <string name="guardar">Guardar</string>
+    <string name="posicion_prompt">Selecciona una posicion</string>
+    <string-array name="posiciones">
+        <item>"Portero"</item>
+        <item>"Defenza"</item>
+        <item>"Mediocampista"</item>
+        <item>"Volante"</item>
+        <item>"Puntero"</item>
+        <item>"Extremo"</item>
+        <item>"Delantero"</item>
+    </string-array>
+    <string-array name="ligas_futbol">
+        <item>"Premier League - Inglesa"</item>
+        <item>"LaLiga - Española"</item>
+        <item>"Bundesliga - Alemana"</item>
+        <item>"Liga Mx - Mexicana"</item>
+        <item>"Serie A - Italiana"</item>
+    </string-array>
+    <string name="ligas_prompt"> Selecciona Una Liga</string>
+</resources>

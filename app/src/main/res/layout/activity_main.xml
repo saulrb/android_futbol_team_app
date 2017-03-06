@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mx.itesm.m6_srb_ejer_futbol.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/titulo_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTituloApp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EquipoContainer"
+        android:layout_weight="0.12"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_height="85dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/ivLigaEquipo"
+            android:layout_weight="1.00"
+            android:cropToPadding="true"
+            android:layout_width="50dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textNombreEquipo"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            tools:text="@string/nombre_equipo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/config_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_config_equipo"
+            android:layout_weight="1"
+            android:layout_gravity="start"/>
+
+        <Button
+            android:text="@string/add_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_agregar_jugador"
+            android:layout_weight="1"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@android:id/list"/>
+</LinearLayout>
